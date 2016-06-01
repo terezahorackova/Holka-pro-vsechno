@@ -1,0 +1,202 @@
+/*
+Bootstrap breakpointy: 768, 992, 1200
+xs: (max-width: 767px)
+sm: (min-width: 768px) and (max-width: 991px)
+md: (min-width: 992px) and (max-width: 1199px)
+lg: (min-width: 1200px)
+
+Barvy
+matova: #209582
+*/
+
+/**** Google Fonts ****/
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,400,700italic,700&subset=latin,latin-ext);
+
+
+
+
+/* nastaveni fontu pro cely dokument, vychozi velikosti pisma */
+body {
+    position: relative;
+    /*padding-top: 50px;*/
+    font-family: Lora, serif;
+    font-size: 15px;
+}
+
+/* v breakpointu 'sm' zvetsime pismo */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* v breakpointu 'md' zvetsime pismo jeste vic */
+@media (min-width: 992px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+
+/* vychozi barva odkazu */
+a {
+    color: #209582;
+}
+
+
+/**** Hlavni menu ****/
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-inverse {
+    border: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #209582;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #209582;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #209582;
+}
+
+/**** Nadpisy ****/
+h2, h3 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+h2 {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+h3 {
+    color: #209582;
+}
+
+
+
+/**** Jumbotron ****/
+
+.jumbotron {
+    padding-top: 75px;
+}
+
+.media-jumbotron {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.tlacitko {
+    color: #fff;
+    background-color: #209582;
+    border-color: #209582;
+}
+
+.tlacitko:link {
+    background-color: #209582;
+    border-color: #209582;
+}
+        
+.tlacitko:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+.tlacitko:focus {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+.tlacitko:active {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+
+
+/**** Sluzby ****/
+.sluzby {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.sluzby img {
+    width: 100%;
+    max-width: 220px;
+    padding: 2px;
+}
+
+
+/**** Reference ****/
+.zakaznik {
+    margin-bottom: 30px;
+}
+
+.zakaznik img {
+    max-width: 80px;
+    margin-right: 15px;
+}
+
+.zakaznik em {
+    color: #888;
+}
+
+
+
+/**** Fotogalerie ****/
+#fotogalerie {
+    padding-bottom: 0;
+}
+
+.galerie {
+    margin: 0;
+    padding: 0;
+}
+
+.galerie li {
+    margin: 0;
+    padding: 1px;
+    display: block;
+    float: left;
+    /* vychozi stav pro mala zarizeni - 3 obrazky vedle sebe */
+    width: 33.3333%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .galerie li {
+        /* stredni velikost zarizeni - 4 obrazky vedle sebe */
+        width: 25%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* velka zarizeni - 6 obrazku vedle sebe */
+    .galerie li {
+        width: 16.6666%;
+    }
+}
+
+
+/**** Kontakt ****/
+#kontakt h3 {
+    margin-top: 0;
+}
